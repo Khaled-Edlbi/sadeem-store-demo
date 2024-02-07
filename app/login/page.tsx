@@ -16,7 +16,7 @@ function Login() {
 
   const [formData, setFormData] = useState({
     username: 'demo',
-    password: '123456',
+    password: 'n!lo.3JP*juW0NkzEI84',
   });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
