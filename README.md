@@ -1,1 +1,1 @@
-# sadeem-backend-demo
+# sadeem-store-demo
