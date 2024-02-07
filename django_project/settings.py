@@ -34,11 +34,11 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = (os.environ.get('DEBUG_VALUE'))
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'sadeem-store-backend.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://sadeem-store.vercel.app',
+    'https://sadeem-store-demo.vercel.app',
 ]
 
 
