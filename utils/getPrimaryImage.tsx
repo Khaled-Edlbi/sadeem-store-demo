@@ -1,5 +1,4 @@
 import { ImageProps } from '@/types'
-import { logoUrl } from '@/app/static-texts'
 
 
 function getPrimaryImage(images: ImageProps[]) {
@@ -9,7 +8,7 @@ function getPrimaryImage(images: ImageProps[]) {
     return primaryImage.imageUrl
 
   } else {
-    return logoUrl
+    return '/Logo.png'
   };
 }
 

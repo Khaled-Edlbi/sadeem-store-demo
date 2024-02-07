@@ -7,7 +7,6 @@ import Cookies from 'js-cookie'
 
 import { ProductDetailsProps } from '@/types'
 import { ImagesSlider, CustomBtn } from '@/components'
-import { logoUrl } from '@/app/static-texts'
 
 
 function ProductDetails(
@@ -44,7 +43,7 @@ function ProductDetails(
     } else {
       const defaultImage = [{
         id: 0,
-        imageUrl: logoUrl,
+        imageUrl: '/Logo.png',
         isPrimary: true
       }];
 
