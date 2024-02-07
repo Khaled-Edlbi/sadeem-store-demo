@@ -1,1 +1,1 @@
-# Sadeem Store Frontend App
+# Sadeem Frontend Demo
