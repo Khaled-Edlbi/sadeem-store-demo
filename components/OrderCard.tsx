@@ -96,7 +96,7 @@ function OrderCard(
 
       <div className="w-full h-[1px] bg-glass mb-5"></div>
 
-      <div className="flex flex-col gap-4 px-2">
+      <div className="w-[310px] flex flex-col gap-4 px-2">
         {[...orderDetails].map(([key, value], index) => (
           <div className="flex gap-4" key={index}>
             <span className="text-graySec w-[75px]">{key}</span>
