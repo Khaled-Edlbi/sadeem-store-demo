@@ -139,7 +139,7 @@ function BuyForm({ isOpen, closeModel, product }: BuyFormProps) {
                 </h2>
 
                 <div className="flex justify-between items-center
-                  px-3 gap-4 sm:gap-6 pb-4"
+                  sm:px-3 px-0 gap-4 sm:gap-6 pb-4"
                 >
                   <Image
                     src={getPrimaryImage(product.images)}

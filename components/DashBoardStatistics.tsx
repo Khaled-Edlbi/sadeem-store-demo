@@ -22,11 +22,12 @@ function DashBoardStatistics(
       
       <div className='flex flex-wrap justify-center items-center gap-8'>
 
-        <a href='#pending-orders' className={`${statisticsStyle}`}>
+        <a href='#pending-orders' className={`text-sky-400 ${statisticsStyle}`}>
           <span className="text-lg"><i className="fa-regular fa-clock mr-2"></i>Pending</span>
           <span className="text-6xl">
             {pendingCount !== undefined ? pendingCount :
-              <Loader width='w-[40px]' height='h-[40px]' borderWidth='border-[4px]'/>
+              <Loader width='w-[40px]' height='h-[40px]' borderWidth='border-[4px]'
+                borderColor='border-sky-400'/>
             }
           </span>
         </a>

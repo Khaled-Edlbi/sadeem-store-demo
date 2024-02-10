@@ -37,12 +37,12 @@ function OrderCard(
       statusStyle = "bg-sky-500 hover:bg-sky-500/70"
       orderStyle = ""
       break;
-    case 'Rejected':
-      statusStyle = "bg-red-600/80 hover:bg-red-700/80"
-      orderStyle = "opacity-50 hover:opacity-100"
-      break;
     case 'Delivered':
       statusStyle = "bg-green-600 hover:bg-green-700"
+      orderStyle = "opacity-50 hover:opacity-100"
+      break;
+    case 'Rejected':
+      statusStyle = "bg-red-600/80 hover:bg-red-700/80"
       orderStyle = "opacity-50 hover:opacity-100"
       break;
   };
@@ -138,7 +138,7 @@ function OrderCard(
                   btnType='button'
                   handleClick={() => handleStatusChange('Pending')}
                   title='Pending'
-                  containerStyles={`${menuItemStyle}`}
+                  containerStyles={`text-sky-400 ${menuItemStyle}`}
                   icon="fa-regular fa-clock"
                   iconStyle="mr-2"
                 />

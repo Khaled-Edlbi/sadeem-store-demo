@@ -52,7 +52,7 @@ function OrdersDashboard() {
         <div className="w-[80%] h-[1px] bg-glass mt-20"></div>
 
         <section id='pending-orders' className="w-[95%] min-h-[100vh] pt-24">
-          <h1 className="text-4xl text-center mb-4">Pending Orders</h1>
+          <h1 className="text-4xl text-center mb-12">Pending Orders</h1>
 
           <div className="flex overflow-x-scroll gap-8 px-8 py-10">
             {typeof orders !== 'undefined' && orders.pending.length > 0 ? 
@@ -62,7 +62,8 @@ function OrdersDashboard() {
               <div className="w-full text-center text-2xl text-graySec mt-44">No orders found !</div> :
 
               <div className="w-full text-center mt-44">
-                <Loader width='w-[50px]' height='h-[50px]' borderWidth='border-[4px]'/>
+                <Loader width='w-[50px]' height='h-[50px]' borderWidth='border-[4px]'
+                  borderColor='border-sky-400'/>
               </div>
             }
           </div>
@@ -71,7 +72,7 @@ function OrdersDashboard() {
         <div className="w-[80%] h-[1px] bg-glass mt-20"></div>
           
         <section id='delivered-orders' className="w-[95%] min-h-[100vh] pt-24">
-          <h1 className="text-4xl text-center mb-4">Delivered Orders</h1>
+          <h1 className="text-4xl text-center mb-12">Delivered Orders</h1>
 
           <div className="flex overflow-x-scroll gap-8 px-8 py-10">
             {typeof orders !== 'undefined' && orders.delivered.length > 0 ? 
@@ -91,7 +92,7 @@ function OrdersDashboard() {
         <div className="w-[80%] h-[1px] bg-glass mt-20"></div>
 
         <section id='rejected-orders' className="w-[95%] min-h-[100vh] pt-24">
-          <h1 className="text-4xl text-center mb-4">Rejected Orders</h1>
+          <h1 className="text-4xl text-center mb-12">Rejected Orders</h1>
 
           <div className="flex overflow-x-scroll gap-8 px-8 py-10">
             {typeof orders !== 'undefined' && orders.rejected.length > 0 ? 
