@@ -103,13 +103,13 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {  # Supabase PostgreSQL DB (Live)
+    'default': {  # Xata PostgreSQL DB (Live)
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['SUPABASE_NAME'],
-        'USER': os.environ['SUPABASE_USER'],
-        'PASSWORD': os.environ['SUPABASE_PASSWORD'],
-        'HOST': os.environ['SUPABASE_HOST'],
-        'PORT': os.environ['SUPABASE_PORT'],
+        'NAME': os.environ['XATA_DB_NAME'],
+        'USER': os.environ['XATA_USER'],
+        'PASSWORD': os.environ['XATA_PASSWORD'],
+        'HOST': os.environ['XATA_HOST'],
+        'PORT': os.environ['XATA_PORT'],
     }
 }
 
